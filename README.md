@@ -119,6 +119,17 @@ python src/train_model.py
 3. Run prediction
 python src/predict.py
 
+## Docker Usage
+
+This project also supports running predictions using Docker, so it can be executed without setting up a local Python environment.
+
+Build Docker Image
+docker build -t customer-churn-ml .
+
+Run Docker Container
+docker run customer-churn-ml
+
+The container runs the prediction script and prints the churn prediction along with probability.
 
 
 ## What I Learned
